@@ -1,0 +1,202 @@
+* {
+  font-family: "Poppins";
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+header .header-top-section {
+  padding: 10px;
+  background-color: #2157a7;
+}
+header .header-top-section .top-bar-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 770px) {
+  header .header-top-section .top-bar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+header .header-top-section .top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 1000px) {
+  header .header-top-section .top-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header .header-top-section .top-content p {
+  color: aliceblue;
+}
+header .header-top-section .top-content .top-bar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header .header-top-section .top-content .top-bar-right h5 {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid white;
+  padding: 10px;
+}
+header .header-top-section .top-content .top-bar-right h5 span {
+  position: absolute;
+  top: 7px;
+  left: 13px;
+}
+header nav {
+  background-image: linear-gradient(rgba(29, 25, 61, 0.8), rgba(18, 15, 48, 0.8));
+}
+header nav .logo {
+  color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+header nav .btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #4b7cd8;
+  color: aliceblue;
+  padding: 10px;
+  width: 150px;
+  font-size: 20px;
+  margin-left: 50px;
+  /*MEDIA QUERY*/
+}
+@media (max-width: 987px) {
+  header nav .btn {
+    margin-left: 0px;
+  }
+}
+header nav .navbar-nav a {
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+header .btn:hover {
+  background-color: aliceblue;
+  color: #4b7cd8;
+  border: 1px solid #4b7cd8;
+}
+
+/*SHOWCASE-SECTION*/
+.showcase-section {
+  background-image: linear-gradient(rgba(58, 52, 236, 0.4), rgba(65, 59, 241, 0.4)), url(images/finance.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.showcase-section .showcase-content {
+  padding: 120px 0 120px;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showcase-section .showcase-content .content {
+  text-align: center;
+}
+.showcase-section .showcase-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/*contact-form*/
+.contact-form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/ino1.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+.contact-form .block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .block .underline {
+  width: 200px;
+  border: 1px solid lightgray;
+}
+.contact-form .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  /*media query*/
+}
+@media (max-width: 1000px) {
+  .contact-form .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.contact-form .img-section {
+  background-image: url(Images/ino10.jpg);
+  background-size: cover;
+  background-position: center;
+  /*media query*/
+}
+@media (max-width: 1000px) {
+  .contact-form .img-section {
+    height: 400px;
+  }
+}
+.contact-form .form-section form .form-control {
+  border: transparent;
+  border-radius: 0;
+  outline: none;
+  background-color: aliceblue;
+  padding: 10px;
+}
+.contact-form .form-section .btn {
+  background-color: #2157a7;
+  padding: 15px;
+  border-radius: 0;
+  color: aliceblue;
+}
+
+/*FOOTER-SECTION*/
+.footer-section {
+  background-color: black;
+  color: aliceblue;
+}
+.footer-section h5, .footer-section span {
+  color: #2157a7;
+}
+.footer-section .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  /*media query*/
+}
+@media (max-width: 1000px) {
+  .footer-section .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .footer-section .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.footer-section .content .Popular-Category p:hover, .footer-section .content .Our-Company p:hover, .footer-section .content .Help-Support p:hover {
+  color: #2157a7;
+}/*# sourceMappingURL=contact.css.map */
